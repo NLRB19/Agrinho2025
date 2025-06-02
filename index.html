@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Escolas Municipais e Ações</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastro de Escolas Municipais</h1>
+    
+    <form id="schoolForm">
+      <input type="text" id="nome" placeholder="Nome da Escola" required />
+      <input type="text" id="endereco" placeholder="Endereço" required />
+      <input type="text" id="diretoria" placeholder="Diretoria" required />
+      <input type="number" id="alunos" placeholder="Número de Alunos" required />
+      <button type="submit">Cadastrar Escola</button>
+    </form>
+
+    <h2>Escolas Cadastradas</h2>
+    <table id="schoolTable">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Endereço</th>
+          <th>Diretoria</th>
+          <th>Alunos</th>
+          <th>Ações</th>
+          <th>Imagens</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <!-- Modal de imagens -->
+  <div id="imageModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Galeria de Ações</h3>
+      <div id="imageGallery"></div>
+      <input type="url" id="imageURL" placeholder="Adicionar URL de imagem" />
+      <button id="addImageBtn">Adicionar Imagem</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
